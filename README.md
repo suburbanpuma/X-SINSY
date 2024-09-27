@@ -26,7 +26,7 @@ X-SINSY is a fork of Sinsy-Remix with the purpose of adding support for Spanish 
 Chinese dictionaries are queried through chinese.table by default, and will be parsed using a pinyin parser if they can't be queried. General non-specific pinyin does not need to be added to the dictionary. Chinese input formats can be in yuan, yuan2, or yvan, but not van.
 
 ## About the Spanish dictionary：
-For Spanish grapheme conversion I've used a modified version of [open-dict](https://github.com/open-dict-data/ipa-dict)). Go check it out, they have TONS of IPA dictionaries, with an MIT license!
+For Spanish grapheme conversion I've used a modified version of [ipa-dict](https://github.com/open-dict-data/ipa-dict). Go check it out, they have TONS of IPA dictionaries, with an MIT license!
 
 ## CMUdict license：
 ```
