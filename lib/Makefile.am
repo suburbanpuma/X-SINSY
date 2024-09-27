@@ -39,6 +39,8 @@ libSinsy_a_SOURCES = Sinsy.cpp \
                      ./chinese/CConf.h \
 					 ./english/EConf.cpp \
                      ./english/EConf.h \
+					 ./spanish/SConf.cpp \
+                     ./spanish/SConf.h \
                      ./label/ILabelOutput.h \
                      ./label/INoteLabel.h \
                      ./label/IPhonemeLabel.h \
