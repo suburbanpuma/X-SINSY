@@ -1,6 +1,6 @@
-# Sinsy Remix
+# X-SINSY
 
-[![Build Status](https://travis-ci.org/hyperzlib/Sinsy-Remix.svg?branch=master)](https://travis-ci.org/hyperzlib/Sinsy-Remix)
+X-SINSY is a fork of Sinsy-Remix with the purpose of adding support for Spanish and P-SAMPA multilingual databases.
 
 ## Usage:
 ```
@@ -8,7 +8,11 @@
   options:                                           [def]
     -w langs    : languages                          [  j]
                   j: Japanese                             
-                  c: Chinese                             
+                  c: Chinese
+                  e: English                             
+                  s: Spanish (coming soon)                             
+                  x: Multilingual                             
+
     -x dir      : dictionary directory               [/usr/local/dic]
     -m htsvoice : HTS voice file                     [N/A]
     -o file     : filename of output wav audio       [N/A]
@@ -17,12 +21,11 @@
     MusicXML file
 ```
 
-## 关于中文字典：
-中文字典默认通过chinese.table进行查询，查询不到会使用拼音解析器进行解析。
-一般的非特殊拼音不需要加到字典里
-中文输入格式可以用yuan yuan2 yvan等格式，但不能用van
+## About the Chinese dictionary:
 
-## 关于英语字典：
+Chinese dictionaries are queried through chinese.table by default, and will be parsed using a pinyin parser if they can't be queried. General non-specific pinyin does not need to be added to the dictionary. Chinese input formats can be in yuan, yuan2, or yvan, but not van.
+
+## CMUdict license：
 ```
 CMUdict
 -------
@@ -90,7 +93,7 @@ THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ```
 
-## Origin README
+## Original README
 ```
 ===============================================================================
        The HMM-Based Singing Voice Synthesis System Remix "Sinsy-r" version 0.95.2
@@ -208,6 +211,13 @@ http://sinsy.sourceforge.net/
 Remix by HyperDeep(hyperzlib)
 Add Chinese support
 in future this project will support windows
+
+*******************************************************************************
+                                X-SINSY
+*******************************************************************************
+
+X-SINSY by suburbanpuma(pumas)
+lets see if i don't blow everything up xoxo
 
 ===============================================================================
 ```
