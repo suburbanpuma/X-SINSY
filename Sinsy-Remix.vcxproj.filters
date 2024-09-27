@@ -188,6 +188,8 @@
     </ClCompile>
     <ClCompile Include="lib\english\EConf.cpp">
       <Filter>Source Files</Filter>
+    <ClCompile Include="lib\spanish\SConf.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -393,6 +395,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="lib\english\EConf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\spanish\SConf.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -103,7 +103,7 @@ HTS_Boolean HTS_GStreamSet_synthesis(HTS_GStreamSet * gss, size_t stage, HTS_Boo
 	gss->total_nsample = fperiod * gss->total_frame;
 	gss->gspeech = (double *) HTS_calloc(gss->total_nsample, sizeof(double));
 	// output progress indexs
-	printf("synthesizeing...\n");
+	printf("Synthesizing...\n");
 	t = cMax - 6;
 	for (i = 0; i < gss->total_frame && (*stop) == FALSE; i++) {
 		nowPerCent = (int)floor(i * 100 / (gss->total_frame));

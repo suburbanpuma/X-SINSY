@@ -50,6 +50,7 @@
 #include "JConf.h"
 #include "CConf.h"
 #include "EConf.h"
+#include "SConf.h"
 
 namespace sinsy
 {
@@ -96,6 +97,7 @@ void ConfManager::clear()
    confs = NULL;
    uCConf = NULL;
    uEConf = NULL;
+   uSConf = NULL;
    confList.clear();
 }
 
@@ -205,6 +207,24 @@ bool ConfManager::setLanguages(const std::string& languages, const std::string& 
 		  }
 		  addConf(uEConf);
 		  deleteList.push_back(uEConf);
+		  break;
+	  }
+	  case 's': { // spanish
+		  const std::string TABLE(dirPath + "/spanish.table");
+		  const std::string CONF(dirPath + "/spanish.conf");
+		  const std::string MACRON_TABLE(dirPath + "/spanish.macron");
+
+		  uSConf = new SConf(UTF_8_STRS);
+
+		  // utf-8
+		  if (!uSConf->read(TABLE, CONF, MACRON_TABLE)) {
+			  ERR_MSG("Cannot read Spanish table, config, or macron file : " << TABLE << ", " << CONF);
+			  delete uSConf;
+			  uSConf = NULL;
+			  return false;
+		  }
+		  addConf(uSConf);
+		  deleteList.push_back(uSConf);
 		  break;
 	  }
       default :
