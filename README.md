@@ -1,6 +1,6 @@
 # X-SINSY
 
-X-SINSY is a fork of Sinsy-Remix with the purpose of adding support for Spanish and P-SAMPA multilingual databases.
+X-SINSY is a fork of Sinsy-Remix with the purpose of adding support for Spanish.
 
 ## Usage:
 ```
@@ -11,7 +11,6 @@ X-SINSY is a fork of Sinsy-Remix with the purpose of adding support for Spanish 
                   c: Chinese
                   e: English                             
                   s: Spanish
-                  x: Multilingual (coming soon)           
 
     -x dir      : dictionary directory               [/usr/local/dic]
     -m htsvoice : HTS voice file                     [N/A]
