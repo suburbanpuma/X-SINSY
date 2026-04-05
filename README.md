@@ -27,6 +27,9 @@ Chinese dictionaries are queried through chinese.table by default, and will be p
 ## About the Spanish dictionary：
 For Spanish grapheme conversion I've used a modified version of [ipa-dict](https://github.com/open-dict-data/ipa-dict). Go check it out, they have TONS of IPA dictionaries, with an MIT license!
 
+## Requirements:
+This code is old. Please make sure to use C++11 or anything under 17 or else it won't build.
+
 ## CMUdict license：
 ```
 CMUdict
