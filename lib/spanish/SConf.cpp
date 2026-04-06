@@ -189,7 +189,7 @@ public:
    //! add syllable
    void addSyllable(const PhonemeTable::PhonemeList& p, bool vowelReductionFlag) {
       if (p.empty()) { // fail safe
-         WARN_MSG("Cannot add Spanish syllable : no phonemes");
+         WARN_MSG("Cannot add spanish syllable : no phonemes");
          return;
       }
       bool clFlag = ((1 == p.size()) && (clPhoneme == p[0])) ? true : false;
